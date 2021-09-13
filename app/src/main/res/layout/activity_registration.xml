@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.view.MainActivity">
+
+    <com.flaviofaria.kenburnsview.KenBurnsView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="300dp"
+            android:layout_marginRight="50dp"
+            app:boxStrokeColor="#008F8282"
+            app:hintTextColor="#DFDFDF"
+            app:startIconDrawable="@mipmap/avatar"
+            app:startIconTint="#DFDFDF">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nameFieldId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#BE787878"
+                android:hint="Name" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="50dp"
+            app:boxStrokeColor="#008F8282"
+            app:hintTextColor="#DFDFDF"
+            app:startIconDrawable="@mipmap/padlock"
+            app:startIconTint="#DFDFDF">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordFieldId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#BE787878"
+                android:hint="Password"
+                android:password="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="50dp"
+            app:boxStrokeColor="#008F8282"
+            app:hintTextColor="#DFDFDF"
+            app:startIconDrawable="@mipmap/padlock"
+            app:startIconTint="#DFDFDF">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/confirmFieldId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#BE787878"
+                android:hint="Confirm password"
+                android:password="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/buttonRegistrationId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="50dp"
+            android:backgroundTint="#90CCCACA"
+            android:text="registration"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
